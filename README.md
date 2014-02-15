@@ -18,7 +18,7 @@ A category on `UIImageView` to turn it into a North Arrow for the [ArcGIS Runtim
 1. Add a `UIImageView` to your user interface. Make sure it does not become a child of your `AGSMapView` (although it can overlap it).
 2. Ensure this `UIImageView` is referenced from your code.
 3. Set the `mapViewForNorthArrow` property on the `UIImageView` to the `AGSMapView` it represents.
-4. Set the Image on the `UIImageView` (sample provided in this repo).
+4. Set the Image on the `UIImageView` (see [samples](Arrows) provided in this repo).
 5. The following properties should be set (although they will automatically be set at runtime):
   * Set View Mode to `Aspect Fit`
   * Uncheck `User Interaction Enabled`
@@ -48,6 +48,8 @@ Here's a sample ViewController.m:
 }
 @end
 ```
+
+Also see the included [sample Xcode](Sample) project.
 
 ## Requirements
 
