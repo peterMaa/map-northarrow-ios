@@ -52,7 +52,7 @@ Here's a sample ViewController.m:
 ## Requirements
 
 * Xcode and the iOS SDK (download [here](https://developer.apple.com/xcode/))
-* ArcGIS Runtime SDK for iOS 10.2 or later (download [here](http://www.esri.com/apps/products/download/index.cfm?fuseaction=download.all#ArcGIS_Runtime_SDK_for_iOS))
+* ArcGIS Runtime SDK for iOS 10.2 or later (download [here](https://developers.arcgis.com/ios/?filename=AGSRuntimeSDKiOSv10.2-u1.pkg&folder=software/ArcGIS_RuntimeSDK/10.2))
 
 ## Resources
 
