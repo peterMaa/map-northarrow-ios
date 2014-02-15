@@ -17,8 +17,8 @@ A category on `UIImageView` to turn it into a North Arrow for the [ArcGIS Runtim
 ### Configure the `UIImageView`
 1. Add a `UIImageView` to your user interface. Make sure it does not become a child of your `AGSMapView` (although it can overlap it).
 2. Ensure this `UIImageView` is referenced from your code.
-3. Set the `mapViewForNorthArrow` property on the North Arrow `UIImageView` to the `AGSMapView` it represents.
-4. Set the Image on the North Arrow `UIImageView` (sample provided in this repo).
+3. Set the `mapViewForNorthArrow` property on the `UIImageView` to the `AGSMapView` it represents.
+4. Set the Image on the `UIImageView` (sample provided in this repo).
 5. The following properties should be set (although they will automatically be set at runtime):
   * Set View Mode to `Aspect Fit`
   * Uncheck `User Interaction Enabled`
@@ -45,13 +45,6 @@ Here's a sample ViewController.m:
 
     self.mapView.allowRotationByPinching = YES;
     self.northArrow.mapViewForNorthArrow = self.mapView;
-
-    AGSEnvelope *initialEnvelope = [AGSEnvelope envelopeWithXmin:-13995275
-                                                            ymin:-80703
-                                                            xmax:-7733554
-                                                            ymax:8920520
-                                                spatialReference:[AGSSpatialReference spatialReferenceWithWKID:102100]];
-    [self.mapView zoomToEnvelope:initialEnvelope animated:YES];
 }
 @end
 ```
