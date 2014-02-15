@@ -11,19 +11,22 @@ A category on `UIImageView` to turn it into a North Arrow for the [ArcGIS Runtim
 ## Getting Started
 
 ### Add the category to your project
-1. Add a `UIImageView` to your user interface. Make sure it does not become a child of your `AGSMapView` (although it can overlap it). Ensure this `UIImageView` is referenced from your code.
-2. Drag the `UIImageView+AGSNorthArrow.h` and `UIImageView+AGSNorthArrow.m` files into your ArcGIS Runtime for iOS project in Xcode and `#include` the `UIImageView+AGSNorthArrow.h` file.
-4. Set the `mapViewForNorthArrow` property on the North Arrow `UIImageView` to the `AGSMapView` it represents.
-5. Set the Image on the North Arrow `UIImageView` (sample provided in this repo).
-6. The following properties should be set (although they will automatically be set at runtime):
+1. Drag the `UIImageView+AGSNorthArrow.h` and `UIImageView+AGSNorthArrow.m` files into your ArcGIS Runtime for iOS project in Xcode.
+2. `#include` the `UIImageView+AGSNorthArrow.h` file.
+
+### Configure the `UIImageView`
+1. Add a `UIImageView` to your user interface. Make sure it does not become a child of your `AGSMapView` (although it can overlap it).
+2. Ensure this `UIImageView` is referenced from your code.
+3. Set the `mapViewForNorthArrow` property on the North Arrow `UIImageView` to the `AGSMapView` it represents.
+4. Set the Image on the North Arrow `UIImageView` (sample provided in this repo).
+5. The following properties should be set (although they will automatically be set at runtime):
   * Set View Mode to `Aspect Fit`
   * Uncheck `User Interaction Enabled`
-  
+
 Here's a sample ViewController.m:
 
-```
+```Objective-C
 #import <ArcGIS/ArcGIS.h>
-#import "BasemapURLs.h"
 #import "UIImageView+AGSNorthArrow.h"
 
 @interface AGSNorthArrowSampleViewController ()
@@ -52,6 +55,7 @@ Here's a sample ViewController.m:
 }
 @end
 ```
+
 ## Requirements
 
 * Xcode and the iOS SDK (download [here](https://developer.apple.com/xcode/))
@@ -59,7 +63,7 @@ Here's a sample ViewController.m:
 
 ## Resources
 
-* [ArcGIS Runtime SDK for iOS Resource Center](http://resources.arcgis.com/en/help/runtime-ios-sdk/concepts/#//00pw00000003000000)
+* [ArcGIS Runtime SDK for iOS](https://developers.arcgis.com/ios/)
 * [ArcGIS Runtime SDK Forums](http://forums.arcgis.com/forums/78-ArcGIS-Runtime-SDK-for-iOS)
 * [ArcGIS Blog](http://blogs.esri.com/esri/arcgis/)
 * Twitter [@esri](http://twitter.com/esri)
@@ -89,5 +93,5 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 A copy of the license is available in the repository's [license.txt](https://raw.github.com/Esri/quickstart-map-ios/master/license.txt) file.
-[](Esri Tags: QuickStart ArcGIS Mobile Mapping iOS iPhone iPad)
+[](Esri Tags: NorthArrow ArcGIS Mobile Mapping iOS iPhone iPad)
 [](Esri Language: Objective-C)
