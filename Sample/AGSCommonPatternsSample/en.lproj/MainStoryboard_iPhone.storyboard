@@ -18,7 +18,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="North Arrow.png" id="d5p-E2-vLh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Simple North Arrow.png" id="d5p-E2-vLh">
                                 <rect key="frame" x="20" y="20" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -54,7 +54,7 @@
     </scenes>
     <resources>
         <image name="Finger.png" width="307" height="600"/>
-        <image name="North Arrow.png" width="138" height="586"/>
+        <image name="Simple North Arrow.png" width="138" height="586"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

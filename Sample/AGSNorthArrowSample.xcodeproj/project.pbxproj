@@ -10,7 +10,7 @@
 		D953ED6318AF2D270037D01C /* Finger.png in Resources */ = {isa = PBXBuildFile; fileRef = D953ED6218AF2D270037D01C /* Finger.png */; };
 		D9A8B11916BB27B9001653EE /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A8B11816BB27B9001653EE /* libc++.dylib */; };
 		D9A8B11B16BB27BF001653EE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A8B11A16BB27BF001653EE /* OpenGLES.framework */; };
-		D9B0BD2118AEABC800D08811 /* North Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = D9B0BD2018AEABC800D08811 /* North Arrow.png */; };
+		D9B0BD2118AEABC800D08811 /* Simple North Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = D9B0BD2018AEABC800D08811 /* Simple North Arrow.png */; };
 		D9B0BD2718AEB43400D08811 /* UIImageView+AGSNorthArrow.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B0BD2618AEB43400D08811 /* UIImageView+AGSNorthArrow.m */; };
 		D9F3D1AE1668271A00FB6A8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F3D1AD1668271A00FB6A8D /* UIKit.framework */; };
 		D9F3D1B01668271A00FB6A8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F3D1AF1668271A00FB6A8D /* Foundation.framework */; };
@@ -40,7 +40,7 @@
 		D953ED6218AF2D270037D01C /* Finger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Finger.png; sourceTree = "<group>"; };
 		D9A8B11816BB27B9001653EE /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		D9A8B11A16BB27BF001653EE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		D9B0BD2018AEABC800D08811 /* North Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "North Arrow.png"; sourceTree = "<group>"; };
+		D9B0BD2018AEABC800D08811 /* Simple North Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simple North Arrow.png"; sourceTree = "<group>"; };
 		D9B0BD2518AEB43400D08811 /* UIImageView+AGSNorthArrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AGSNorthArrow.h"; sourceTree = "<group>"; };
 		D9B0BD2618AEB43400D08811 /* UIImageView+AGSNorthArrow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AGSNorthArrow.m"; sourceTree = "<group>"; };
 		D9C35FF818A9581C002EEB27 /* BasemapURLs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasemapURLs.h; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				D953ED6218AF2D270037D01C /* Finger.png */,
-				D9B0BD2018AEABC800D08811 /* North Arrow.png */,
+				D9B0BD2018AEABC800D08811 /* Simple North Arrow.png */,
 				E158FFBC16FE6141009BC1C6 /* icon@2x.png */,
 				E158FFBA16FE613E009BC1C6 /* icon.png */,
 				D9F3D1E31668293000FB6A8D /* ArcGIS.bundle */,
@@ -198,7 +198,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = ESRI;
 			};
-			buildConfigurationList = D9F3D1A31668271900FB6A8D /* Build configuration list for PBXProject "AGSCommonPatternsSample" */;
+			buildConfigurationList = D9F3D1A31668271900FB6A8D /* Build configuration list for PBXProject "AGSNorthArrowSample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -222,7 +222,7 @@
 			files = (
 				D9F3D1B81668271A00FB6A8D /* InfoPlist.strings in Resources */,
 				D9F3D1C01668271A00FB6A8D /* Default.png in Resources */,
-				D9B0BD2118AEABC800D08811 /* North Arrow.png in Resources */,
+				D9B0BD2118AEABC800D08811 /* Simple North Arrow.png in Resources */,
 				D9F3D1C21668271A00FB6A8D /* Default@2x.png in Resources */,
 				D9F3D1C41668271A00FB6A8D /* Default-568h@2x.png in Resources */,
 				D9F3D1C71668271A00FB6A8D /* MainStoryboard_iPhone.storyboard in Resources */,
@@ -374,7 +374,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D9F3D1A31668271900FB6A8D /* Build configuration list for PBXProject "AGSCommonPatternsSample" */ = {
+		D9F3D1A31668271900FB6A8D /* Build configuration list for PBXProject "AGSNorthArrowSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9F3D1CE1668271A00FB6A8D /* Debug */,

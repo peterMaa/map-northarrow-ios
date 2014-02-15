@@ -49,6 +49,10 @@ Here's a sample ViewController.m:
 @end
 ```
 
+In the above code, the `UIImageView` is configured in the Storyboard:
+
+![Config](storyboard-config.png)
+
 Also see the included [sample Xcode](Sample) project.
 
 ## Requirements
