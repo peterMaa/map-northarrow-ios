@@ -61,6 +61,8 @@ Here's a sample ViewController.m:
 * [ArcGIS Blog](http://blogs.esri.com/esri/arcgis/)
 * Twitter [@esri](http://twitter.com/esri)
 * [Apple iOS Dev Center](https://developer.apple.com/devcenter/ios/index.action)
+* [North Arrow Clipart](http://www.clker.com/clipart-north-arrow.html)
+* [Pointing Finger Clipart](http://www.downloadclipart.net/browse/8100/finger-clipart)
 
 ## Issues
 
