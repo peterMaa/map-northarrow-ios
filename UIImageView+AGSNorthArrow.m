@@ -19,35 +19,59 @@
 @end
 
 @implementation UIImageView (AGSNorthArrow)
+#pragma mark - Property setters/getters
 -(void)setMapViewForNorthArrow:(AGSMapView *)mapView
 {
-    AGSMapView* oldMapView = self.mapViewForNorthArrow;
+    AGSMapView *oldMapView = self.mapViewForNorthArrow;
     if (oldMapView) {
-        [self setNorthArrowAngle:0];
+        [oldMapView removeObserver:self forKeyPath:kAngleKey];
+        [oldMapView removeObserver:self forKeyPath:kAnimatingKey];
     }
 
+    // Ensure we are configured properly
+    self.userInteractionEnabled = NO;
+    self.contentMode = UIViewContentModeScaleAspectFit;
+
+    // Keep a weak reference to our AGSMapView
     objc_setAssociatedObject(self, kMapViewKey, mapView, OBJC_ASSOCIATION_ASSIGN);
     
     if (mapView) {
+        // Show North
         [self setNorthArrowAngle:mapView.rotationAngle];
-        self.userInteractionEnabled = NO;
 
-        // We want to know when the angle has changed
+        // Track rotation, either through interaction or animating with AGSMapView::setRotationAngle
         [mapView addObserver:self forKeyPath:kAngleKey options:NSKeyValueObservingOptionNew context:nil];
-        // But also we want to know if the map is animating towards a new angle
         [mapView addObserver:self forKeyPath:kAnimatingKey options:NSKeyValueObservingOptionNew context:nil];
+    } else {
+        [self setNorthArrowAngle:0];
     }
 }
 
 -(AGSMapView *)mapViewForNorthArrow
 {
-    return objc_getAssociatedObject(self, kMapViewKey);;
+    return objc_getAssociatedObject(self, kMapViewKey);
 }
 
+-(void)setTimer:(NSTimer *)timer
+{
+    if (timer) {
+        // Strong reference
+        objc_setAssociatedObject(self, kTimerKey, timer, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    } else {
+        // Weak reference to nil
+        objc_setAssociatedObject(self, kTimerKey, nil, OBJC_ASSOCIATION_ASSIGN);
+    }
+}
+
+-(NSTimer *)timer
+{
+    return objc_getAssociatedObject(self, kTimerKey);
+}
+
+#pragma mark - KVO Observer
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
     if ([keyPath isEqualToString:kAngleKey]) {
-        // New angle. Rotate to match.
         [self setNorthArrowAngle:(double)[object rotationAngle]];
     } else if ([keyPath isEqualToString:kAnimatingKey]) {
         if (self.mapViewForNorthArrow.animating) {
@@ -64,20 +88,7 @@
     }
 }
 
--(void)setTimer:(NSTimer *)timer
-{
-    if (timer) {
-        objc_setAssociatedObject(self, kTimerKey, timer, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    } else {
-        objc_setAssociatedObject(self, kTimerKey, nil, OBJC_ASSOCIATION_ASSIGN);
-    }
-}
-
--(NSTimer *)timer
-{
-    return objc_getAssociatedObject(self, kTimerKey);
-}
-
+#pragma mark - Update North Arrow
 -(void)checkRotation:(NSTimer*)timer
 {
     [self setNorthArrowAngle:self.mapViewForNorthArrow.rotationAngle];
