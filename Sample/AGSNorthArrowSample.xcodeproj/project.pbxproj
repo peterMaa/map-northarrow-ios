@@ -17,7 +17,7 @@
 		D9F3D1B21668271A00FB6A8D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F3D1B11668271A00FB6A8D /* CoreGraphics.framework */; };
 		D9F3D1B81668271A00FB6A8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9F3D1B61668271A00FB6A8D /* InfoPlist.strings */; };
 		D9F3D1BA1668271A00FB6A8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F3D1B91668271A00FB6A8D /* main.m */; };
-		D9F3D1BE1668271A00FB6A8D /* AGSCommonPatternsSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F3D1BD1668271A00FB6A8D /* AGSCommonPatternsSampleAppDelegate.m */; };
+		D9F3D1BE1668271A00FB6A8D /* AGSNorthArrowSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F3D1BD1668271A00FB6A8D /* AGSNorthArrowSampleAppDelegate.m */; };
 		D9F3D1C01668271A00FB6A8D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F3D1BF1668271A00FB6A8D /* Default.png */; };
 		D9F3D1C21668271A00FB6A8D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F3D1C11668271A00FB6A8D /* Default@2x.png */; };
 		D9F3D1C41668271A00FB6A8D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F3D1C31668271A00FB6A8D /* Default-568h@2x.png */; };
@@ -44,16 +44,16 @@
 		D9B0BD2518AEB43400D08811 /* UIImageView+AGSNorthArrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AGSNorthArrow.h"; sourceTree = "<group>"; };
 		D9B0BD2618AEB43400D08811 /* UIImageView+AGSNorthArrow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AGSNorthArrow.m"; sourceTree = "<group>"; };
 		D9C35FF818A9581C002EEB27 /* BasemapURLs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasemapURLs.h; sourceTree = "<group>"; };
-		D9F3D1A91668271A00FB6A8D /* Basemap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Basemap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F3D1A91668271A00FB6A8D /* NorthArrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NorthArrow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F3D1AD1668271A00FB6A8D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D9F3D1AF1668271A00FB6A8D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D9F3D1B11668271A00FB6A8D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D9F3D1B51668271A00FB6A8D /* AGSCommonPatternsSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AGSCommonPatternsSample-Info.plist"; sourceTree = "<group>"; };
+		D9F3D1B51668271A00FB6A8D /* AGSNorthArrowSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AGSNorthArrowSample-Info.plist"; sourceTree = "<group>"; };
 		D9F3D1B71668271A00FB6A8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D9F3D1B91668271A00FB6A8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D9F3D1BB1668271A00FB6A8D /* AGSCommonPatternsSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AGSCommonPatternsSample-Prefix.pch"; sourceTree = "<group>"; };
-		D9F3D1BC1668271A00FB6A8D /* AGSCommonPatternsSampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGSCommonPatternsSampleAppDelegate.h; sourceTree = "<group>"; };
-		D9F3D1BD1668271A00FB6A8D /* AGSCommonPatternsSampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGSCommonPatternsSampleAppDelegate.m; sourceTree = "<group>"; };
+		D9F3D1BB1668271A00FB6A8D /* AGSNorthArrowSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AGSNorthArrowSample-Prefix.pch"; sourceTree = "<group>"; };
+		D9F3D1BC1668271A00FB6A8D /* AGSNorthArrowSampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGSNorthArrowSampleAppDelegate.h; sourceTree = "<group>"; };
+		D9F3D1BD1668271A00FB6A8D /* AGSNorthArrowSampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGSNorthArrowSampleAppDelegate.m; sourceTree = "<group>"; };
 		D9F3D1BF1668271A00FB6A8D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		D9F3D1C11668271A00FB6A8D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D9F3D1C31668271A00FB6A8D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -96,10 +96,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D9BAC4F718B1459900DF1AB9 /* UIImageView NorthArrow */ = {
+			isa = PBXGroup;
+			children = (
+				D9B0BD2518AEB43400D08811 /* UIImageView+AGSNorthArrow.h */,
+				D9B0BD2618AEB43400D08811 /* UIImageView+AGSNorthArrow.m */,
+			);
+			name = "UIImageView NorthArrow";
+			sourceTree = "<group>";
+		};
 		D9F3D19E1668271900FB6A8D = {
 			isa = PBXGroup;
 			children = (
-				D9F3D1B31668271A00FB6A8D /* AGSCommonPatternsSample */,
+				D9F3D1B31668271A00FB6A8D /* Source */,
 				D9F3D1AC1668271A00FB6A8D /* Frameworks */,
 				D9F3D1AA1668271A00FB6A8D /* Products */,
 			);
@@ -108,7 +117,7 @@
 		D9F3D1AA1668271A00FB6A8D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D9F3D1A91668271A00FB6A8D /* Basemap.app */,
+				D9F3D1A91668271A00FB6A8D /* NorthArrow.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,21 +141,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D9F3D1B31668271A00FB6A8D /* AGSCommonPatternsSample */ = {
+		D9F3D1B31668271A00FB6A8D /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				D9C35FF818A9581C002EEB27 /* BasemapURLs.h */,
-				D9F3D1BC1668271A00FB6A8D /* AGSCommonPatternsSampleAppDelegate.h */,
-				D9F3D1BD1668271A00FB6A8D /* AGSCommonPatternsSampleAppDelegate.m */,
+				D9F3D1BC1668271A00FB6A8D /* AGSNorthArrowSampleAppDelegate.h */,
+				D9F3D1BD1668271A00FB6A8D /* AGSNorthArrowSampleAppDelegate.m */,
 				D9F3D1C51668271A00FB6A8D /* MainStoryboard_iPhone.storyboard */,
 				D9F3D1C81668271A00FB6A8D /* MainStoryboard_iPad.storyboard */,
 				D9F3D1CB1668271A00FB6A8D /* AGSNorthArrowSampleViewController.h */,
 				D9F3D1CC1668271A00FB6A8D /* AGSNorthArrowSampleViewController.m */,
-				D9B0BD2518AEB43400D08811 /* UIImageView+AGSNorthArrow.h */,
-				D9B0BD2618AEB43400D08811 /* UIImageView+AGSNorthArrow.m */,
+				D9BAC4F718B1459900DF1AB9 /* UIImageView NorthArrow */,
 				D9F3D1B41668271A00FB6A8D /* Supporting Files */,
 			);
-			path = AGSCommonPatternsSample;
+			path = Source;
 			sourceTree = SOURCE_ROOT;
 		};
 		D9F3D1B41668271A00FB6A8D /* Supporting Files */ = {
@@ -157,10 +165,10 @@
 				E158FFBC16FE6141009BC1C6 /* icon@2x.png */,
 				E158FFBA16FE613E009BC1C6 /* icon.png */,
 				D9F3D1E31668293000FB6A8D /* ArcGIS.bundle */,
-				D9F3D1B51668271A00FB6A8D /* AGSCommonPatternsSample-Info.plist */,
+				D9F3D1B51668271A00FB6A8D /* AGSNorthArrowSample-Info.plist */,
 				D9F3D1B61668271A00FB6A8D /* InfoPlist.strings */,
 				D9F3D1B91668271A00FB6A8D /* main.m */,
-				D9F3D1BB1668271A00FB6A8D /* AGSCommonPatternsSample-Prefix.pch */,
+				D9F3D1BB1668271A00FB6A8D /* AGSNorthArrowSample-Prefix.pch */,
 				D9F3D1BF1668271A00FB6A8D /* Default.png */,
 				D9F3D1C11668271A00FB6A8D /* Default@2x.png */,
 				D9F3D1C31668271A00FB6A8D /* Default-568h@2x.png */,
@@ -171,9 +179,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D9F3D1A81668271A00FB6A8D /* AGSCommonPatternsSample */ = {
+		D9F3D1A81668271A00FB6A8D /* AGSNorthArrowSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D9F3D1D01668271A00FB6A8D /* Build configuration list for PBXNativeTarget "AGSCommonPatternsSample" */;
+			buildConfigurationList = D9F3D1D01668271A00FB6A8D /* Build configuration list for PBXNativeTarget "AGSNorthArrowSample" */;
 			buildPhases = (
 				D9F3D1A51668271A00FB6A8D /* Sources */,
 				D9F3D1A61668271A00FB6A8D /* Frameworks */,
@@ -183,9 +191,9 @@
 			);
 			dependencies = (
 			);
-			name = AGSCommonPatternsSample;
+			name = AGSNorthArrowSample;
 			productName = Basemaps;
-			productReference = D9F3D1A91668271A00FB6A8D /* Basemap.app */;
+			productReference = D9F3D1A91668271A00FB6A8D /* NorthArrow.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -210,7 +218,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D9F3D1A81668271A00FB6A8D /* AGSCommonPatternsSample */,
+				D9F3D1A81668271A00FB6A8D /* AGSNorthArrowSample */,
 			);
 		};
 /* End PBXProject section */
@@ -242,7 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9F3D1BA1668271A00FB6A8D /* main.m in Sources */,
-				D9F3D1BE1668271A00FB6A8D /* AGSCommonPatternsSampleAppDelegate.m in Sources */,
+				D9F3D1BE1668271A00FB6A8D /* AGSNorthArrowSampleAppDelegate.m in Sources */,
 				D9F3D1CD1668271A00FB6A8D /* AGSNorthArrowSampleViewController.m in Sources */,
 				D9B0BD2718AEB43400D08811 /* UIImageView+AGSNorthArrow.m in Sources */,
 			);
@@ -337,8 +345,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(HOME)/Library/SDKs/ArcGIS/iOS/**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AGSCommonPatternsSample/AGSCommonPatternsSample-Prefix.pch";
-				INFOPLIST_FILE = "AGSCommonPatternsSample/AGSCommonPatternsSample-Info.plist";
+				GCC_PREFIX_HEADER = "Source/AGSNorthArrowSample-Prefix.pch";
+				INFOPLIST_FILE = "Source/AGSNorthArrowSample-Info.plist";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -346,7 +354,7 @@
 					"-framework",
 					ArcGIS,
 				);
-				PRODUCT_NAME = Basemap;
+				PRODUCT_NAME = NorthArrow;
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
@@ -357,15 +365,15 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(HOME)/Library/SDKs/ArcGIS/iOS/**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AGSCommonPatternsSample/AGSCommonPatternsSample-Prefix.pch";
-				INFOPLIST_FILE = "AGSCommonPatternsSample/AGSCommonPatternsSample-Info.plist";
+				GCC_PREFIX_HEADER = "Source/AGSNorthArrowSample-Prefix.pch";
+				INFOPLIST_FILE = "Source/AGSNorthArrowSample-Info.plist";
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
 					"-framework",
 					ArcGIS,
 				);
-				PRODUCT_NAME = Basemap;
+				PRODUCT_NAME = NorthArrow;
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
@@ -383,7 +391,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D9F3D1D01668271A00FB6A8D /* Build configuration list for PBXNativeTarget "AGSCommonPatternsSample" */ = {
+		D9F3D1D01668271A00FB6A8D /* Build configuration list for PBXNativeTarget "AGSNorthArrowSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9F3D1D11668271A00FB6A8D /* Debug */,
