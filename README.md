@@ -12,7 +12,7 @@ A category on `UIImageView` to turn it into a North Arrow for the [ArcGIS Runtim
 
 ### Add the category to your project
 1. Drag the `UIImageView+AGSNorthArrow.h` and `UIImageView+AGSNorthArrow.m` files into your ArcGIS Runtime for iOS project in Xcode.
-2. `#import` the `UIImageView+AGSNorthArrow.h` file.
+2. Reference the category in your code (`#import` the `UIImageView+AGSNorthArrow.h` file).
 
 ### Configure the `UIImageView`
 1. Add a `UIImageView` to your user interface. Make sure it does not become a child of your `AGSMapView` (although it can overlap it).
