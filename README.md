@@ -5,9 +5,6 @@ A category on `UIImageView` to turn it into a North Arrow for the [ArcGIS Runtim
 
 ![App](map-northarrow-ios.png)
 
-## Features
-* Extend `UIImageView` to act as a North Arrow for an `AGSMapView`, rotating its content to match the rotation of that `AGSMapView`.
-
 ## Getting Started
 
 ### Add the category to your project
@@ -50,18 +47,21 @@ In the above code, the `UIImageView` is configured in the Storyboard:
 
 ![Config](storyboard-config.png)
 
-Also see the included [sample Xcode](Sample) project.
+Also see the included [example Xcode](Demo Project) project.
 
 ## Notes
-At runtime, the following properties will be set automatically on the UIImageView control:
+At runtime, the following properties will be set automatically on the `UIImageView` control:
 
 * `View Mode` is set to `Aspect Fit`
 * `User Interaction` is disabled
 
+This code has been tested against the 10.2 release of the ArcGIS Runtime SDK for iOS. While it should work with the 10.1 release onwards and may work with earlier releases, it has not been tested against them.
+
+
 ## Requirements
 
-* Xcode and the iOS SDK (download [here](https://developer.apple.com/xcode/))
-* ArcGIS Runtime SDK for iOS 10.2 or later (download [here](https://developers.arcgis.com/ios/?filename=AGSRuntimeSDKiOSv10.2-u1.pkg&folder=software/ArcGIS_RuntimeSDK/10.2))
+* Xcode and the iOS SDK ([download](https://developer.apple.com/xcode/))
+* ArcGIS Runtime SDK for iOS ([download](https://developers.arcgis.com/ios/?filename=AGSRuntimeSDKiOSv10.2-u1.pkg&folder=software/ArcGIS_RuntimeSDK/10.2))
 
 ## Resources
 
