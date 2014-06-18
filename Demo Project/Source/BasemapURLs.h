@@ -4,6 +4,7 @@
 //  Created by Nicholas Furness on 2/10/14.
 //  Copyright (c) 2014 ESRI. All rights reserved.
 //
+//  Edited by Peter Ma on 3/10/14.
 
 #ifndef AGSCommonPatternsSample_BasemapURLs_h
 #define AGSCommonPatternsSample_BasemapURLs_h
@@ -16,5 +17,12 @@
 #define kImageryUrl @"http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
 #define kImageryRefURL @"http://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer"
 #define kNatGeoRefURL @"http://services.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer"
+
+// BaseMap for China
+#define kGeoQCommunityURL @"http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineCommunity/MapServer"
+#define kGeoQStreetColorURL @"http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetColor/MapServer"
+#define kGeoQStreetWarmURL @"http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetWarm/MapServer"
+#define kGeoQStreetColdURL @"http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetCold/MapServer"
+#define kGeoQStreetGrayURL @"http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetGray/MapServer"
 
 #endif
