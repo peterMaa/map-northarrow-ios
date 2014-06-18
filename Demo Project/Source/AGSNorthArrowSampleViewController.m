@@ -11,6 +11,12 @@
 #import "UIImageView+AGSNorthArrow.h"
 #import <CoreLocation/CoreLocation.h>
 
+#if TARGET_IPHONE_SIMULATOR
+#define SIMULATOR 1
+#elif TARGET_OS_IPHONE
+#define SIMULATOR 0
+#endif
+
 @interface AGSNorthArrowSampleViewController ()<CLLocationManagerDelegate>
 @property (weak, nonatomic) IBOutlet AGSMapView *mapView;
 @property (weak, nonatomic) IBOutlet UIImageView *northArrow;
@@ -19,6 +25,7 @@
 
 @implementation AGSNorthArrowSampleViewController
 bool rotateActive;
+bool messageForSimulator;
 
 - (void)viewDidLoad
 {
@@ -44,24 +51,26 @@ bool rotateActive;
 }
 
 - (IBAction)randomAngleTapped:(id)sender {
-    //double randomAngle = rand() % 360;
-    //[self.mapView setRotationAngle:randomAngle animated:YES];
-    //
-    if ([CLLocationManager headingAvailable])
-    {
-        if (rotateActive) {
-            [self.locManager stopUpdatingHeading];
-        }else{
-            [self.locManager startUpdatingHeading];
+    if (SIMULATOR == 1) {
+        if (!messageForSimulator) {
+            UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Atention" message:@"Compass not available,so give a random map rotation angle." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [alert show];
+            messageForSimulator = !messageForSimulator;
         }
-        rotateActive = !rotateActive;
+        double randomAngle = rand() % 360;
+        [self.mapView setRotationAngle:randomAngle animated:YES];
+    }else{
+        if ([CLLocationManager headingAvailable])
+        {
+            if (rotateActive) {
+                [self.locManager stopUpdatingHeading];
+                [self.mapView setRotationAngle:0.0];
+            }else{
+                [self.locManager startUpdatingHeading];
+            }
+            rotateActive = !rotateActive;
+        }
     }
-    else
-    {
-        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"atention" message:@"compass not Available" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-        [alert show];
-    }
-
 }
 
 -(BOOL)prefersStatusBarHidden
@@ -76,11 +85,6 @@ bool rotateActive;
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
 {
-    //CGFloat heading = -1.0f * M_PI * newHeading.magneticHeading / 180.0f;
-    
-    //angel.text=[[NSString alloc]initWithFormat:@"angle:%f",newHeading.magneticHeading];
-    //arrow.transform = CGAffineTransformMakeRotation(heading);
-    
     double randomAngle = newHeading.magneticHeading;
     [self.mapView setRotationAngle:randomAngle animated:YES];
 }
